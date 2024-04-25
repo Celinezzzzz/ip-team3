@@ -1,0 +1,38 @@
+@use "./variables" as *;
+@use "./typography" as *;
+
+@mixin mobile {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin font-mobile-header {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+@mixin font-mobile-subheader {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+@mixin font-mobile-button {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+@mixin font-mobile-body {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+@mixin button {
+  height: 36px;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0.5rem;
+  cursor: pointer;
+}
