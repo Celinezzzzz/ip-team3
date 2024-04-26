@@ -1,0 +1,99 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
+
+.site-header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  background-image: linear-gradient(to top, #f3f3f9 60%, #f3f3f97b 40%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 1.75rem 0.75rem;
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: right;
+  }
+
+  &__user-img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  &__user-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  &__user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: left;
+    margin-left: 0.5rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__icon {
+    width: 16px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+  }
+
+  &__btn {
+    @include button;
+    width: 30%;
+    text-align: center;
+    border: none;
+    background-color: $primary-purple;
+
+    color: $primary-white;
+    @include font-mobile-button;
+  }
+  &__status {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+  }
+  &__sell-btn {
+    @include button;
+    text-align: center;
+    border: none;
+    background-color: $primary-purple;
+    color: $primary-white;
+    @include font-mobile-button;
+    margin-right: 0.25rem;
+    width: 100px;
+  }
+  &__buy-btn {
+    @include button;
+    text-align: center;
+    border: none;
+    background-color: $primary-purple;
+    color: $primary-white;
+    @include font-mobile-button;
+    width: 100px;
+  }
+  &__last {
+    @include font-mobile-bodys;
+    margin-bottom: 10px;
+  }
+  &__following {
+    display: flex;
+    flex-direction: row;
+    @include font-mobile-bodym;
+    justify-content: space-around;
+    margin-top: 5px;
+  }
+}
