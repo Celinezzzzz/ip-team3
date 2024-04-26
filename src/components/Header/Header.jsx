@@ -1,45 +1,38 @@
-import React from "react";
-import "./Header.scss";
-import userImage from "../../assets/images/Mohan-muruge.jpg";
-import image2 from "../../assets/icons/icons8-verified.svg";
-import backIcon from "../../assets/icons/arrow_back-24px.svg";
+import React from 'react';
+import './Header.scss';
+import userImage from '../../assets/images/Mohan-muruge.jpg';
+import image2 from '../../assets/icons/icons8-verified.svg';
+import backIcon from '../../assets/icons/arrow_back-24px.svg';
+import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
       <section className="site-header">
         <div className="site-header__wrapper">
-          <img
-            src={backIcon}
-            alt="Back to Main"
-            className="site-header__back"
-          />
+          <Link to="/">
+            <img src={backIcon} alt="Back to Main" className="site-header__back" />
+          </Link>
           <button className="site-header__btn">FOLLOW</button>
         </div>
         <div className="site-header__user-info">
           <div className="site-header__user-avtar">
-            <img
-              src={userImage}
-              alt="User-image"
-              className="site-header__user-img"
-            />
+            <img src={userImage} alt="UserImage" className="site-header__user-img" />
           </div>
 
           <div className="site-header__user-details">
             <div className="site-header__info">
               <span className="site-header__username">Mohan Muruge</span>
-              <img
-                src={image2}
-                alt="verified icon"
-                className="site-header__icon"
-              />
+              <img src={image2} alt="verified icon" className="site-header__icon" />
             </div>
-            <span className="site-header__last">
-              Last visited 9 min ago | 5 yrs on Kijiji{" "}
-            </span>
+            <span className="site-header__last">Last visited 9 min ago | 5 yrs on Kijiji </span>
 
             <div className="site-header__status">
-              <button className="site-header__sell-btn">Great Seller</button>
-              <button className="site-header__buy-btn">Good Buyer</button>
+              <Link to="/user-profile/status-scale">
+                <button className="site-header__sell-btn">Great Seller</button>
+              </Link>
+              <Link to="/user-profile/status-scale">
+                <button className="site-header__buy-btn">Good Buyer</button>
+              </Link>
             </div>
             <div className="site-header__following">
               <span className="site-header__username">12 Following</span>
