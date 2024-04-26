@@ -1,15 +1,15 @@
-@use '../../styles/mixins' as *;
-@use '../../styles/variables' as *;
-@use '../../styles/typography' as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
 
 .scaling-container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 10px 0;
-  font-weight: 600; 
+  @include font-mobile-bodym;
 }
 
 .rating-scale-container {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .rating-title {
@@ -17,36 +17,36 @@
 }
 
 .rating-scale-subcontainer {
-  border: 2px solid black; 
-  border-radius: 30px; 
+  border: 2px solid black;
+  border-radius: 30px;
   padding: 20px;
   position: relative;
 }
-
 
 .status-labels {
   display: flex;
   justify-content: space-between;
   position: relative;
+  @include font-mobile-bodym;
 }
 
 .status-label-item {
   text-align: center;
   position: relative;
   flex: 1;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .status-label {
   display: block;
-  color: $primary-black; 
+  color: $primary-black;
   margin-bottom: 20px;
 }
 
 .status-bar {
-  height: 15px;
-  background: $secondary-yellow; 
-  width: 98%;
+  height: 10px;
+  background: $secondary-yellow;
+  width: 95%;
   border-radius: 20px;
   top: 20px;
 }
@@ -56,20 +56,21 @@
   top: -17px;
   width: 20px;
   height: 20px;
-  background-color: darken($secondary-yellow, 5%); 
+  background-color: darken($secondary-yellow, 5%);
   border-radius: 50%;
-  z-index: 1; 
+  z-index: 1;
   transform: translateX(-50%);
 }
 
 .highlight {
   font-weight: bold;
   border-radius: 5px;
-  background-color: $secondary-yellow; 
-  padding: 5px 15px;
+  background-color: $secondary-yellow;
+  padding: 0px 8px;
+
   top: 0;
   z-index: 2;
-  margin-bottom: 10px; 
+  margin-bottom: 20px;
 }
 
 .status-bar-background {
@@ -79,30 +80,31 @@
   position: relative;
 }
 
-
 .rating-description {
   margin-top: 10px;
-  color: $primary-black; 
+  color: $primary-black;
   text-align: center;
-  font-weight: 400;
+  @include font-mobile-bodym;
 }
 
 .status-button {
+  @include font-mobile-button;
   display: block;
-  width: 100%; 
+  width: 100%;
   padding: 10px;
-  margin-top: 20px; 
-  background-color: $primary-purple; 
-  color: #fff;
+  margin-top: 20px;
+  background-color: $primary-purple;
+  color: $primary-white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 600;
   width: auto;
-  margin-left: auto; 
-  margin-right: auto; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .status-button:hover {
-  background-color: darken($primary-purple, 15%); 
+  background-color: darken($primary-purple, 15%);
 }
