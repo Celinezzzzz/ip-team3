@@ -1,0 +1,45 @@
+.status-container {
+    position: relative;
+    padding: 10px 0; /* Space for the indicator */
+  }
+  
+  .status-labels {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .status-label-item {
+    text-align: center; /* Center the label text */
+    position: relative; /* For positioning the yellow bar */
+    flex: 1; /* Distribute space evenly */
+  }
+  
+  .status-label {
+    display: block; /* Make the label a block for proper spacing */
+    color: #666;
+    margin-bottom: 5px; /* Space between label and yellow bar */
+  }
+  
+  .status-bar {
+    height: 10px; /* Height of the yellow bar */
+    background: purple; /* Color of the yellow bar */
+    width: 98%; /* Full width of the label item */
+    border-radius: 20px;
+  }
+  
+  .status-indicator {
+    position: absolute;
+    top: 10px; /* Adjust the top position to place the dot above the yellow bars */
+    width: 20px; /* Width of the dot */
+    height: 20px; /* Height of the dot */
+    background: yellow; /* Color of the indicator dot */
+    border-radius: 50%;
+    z-index: 1; /* Ensure it's above the bars */
+  }
+  
+  .highlight {
+    color: #000;
+    font-weight: bold;
+  }
+  
