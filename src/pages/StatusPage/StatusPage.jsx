@@ -1,13 +1,16 @@
 import './StatusPage.scss';
-import Status from '../../components/Status/Status'; 
-
+import Status from '../../components/Status/Status';
+import { Navbar } from '../../components/Navbar/Navbar';
 
 function StatusPage() {
-    return (
-            <div className="status-page">
-                <Status sellerRating={85} buyerRating={30}/>
-            </div>
-    );
+  return (
+    <>
+      <Navbar />
+      <div className="status-page">
+        <Status sellerRating={85} buyerRating={30} />
+      </div>
+    </>
+  );
 }
 
 export default StatusPage;
