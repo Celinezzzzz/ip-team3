@@ -1,9 +1,9 @@
-@use '../../styles/mixins' as *;
-@use '../../styles/variables' as *;
-@use '../../styles/typography' as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/typography" as *;
 
 .status-page {
   padding: 0 0.75rem;
-  min-height: 430px;
+  max-height: 430px;
   overflow-y: auto;
 }
