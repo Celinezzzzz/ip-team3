@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/user-profile/rating" element={<StatusPage />} />
+        <Route path="/user-profile/status-scale" element={<StatusPage />} />
         <Route path="/" element={<ListedItemsPage />} />
         <Route path="/user-profile/solditems" element={<SoldItemsPage />} />
         <Route path="/user-profile/about" element={<AboutPage />} />

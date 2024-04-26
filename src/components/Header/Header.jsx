@@ -27,8 +27,12 @@ const Header = () => {
             <span className="site-header__last">Last visited 9 min ago | 5 yrs on Kijiji </span>
 
             <div className="site-header__status">
-              <button className="site-header__sell-btn">Great Seller</button>
-              <button className="site-header__buy-btn">Good Buyer</button>
+              <Link to="/user-profile/status-scale">
+                <button className="site-header__sell-btn">Great Seller</button>
+              </Link>
+              <Link to="/user-profile/status-scale">
+                <button className="site-header__buy-btn">Good Buyer</button>
+              </Link>
             </div>
             <div className="site-header__following">
               <span className="site-header__username">12 Following</span>
