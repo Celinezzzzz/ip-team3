@@ -1,12 +1,11 @@
 import './StatusPage.scss';
 import Status from '../../components/Status/Status'; 
-//import Header from '../../components/Header/Header'; 
 
 
 function StatusPage() {
     return (
             <div className="status-page">
-                <Status />
+                <Status sellerRating={85} buyerRating={30}/>
             </div>
     );
 }
