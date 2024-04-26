@@ -9,7 +9,7 @@ import Status from "./components/Status/Status";
 function App() {
   return (
     <>
-      <Status rating={75} />
+      <Status sellerRating={30} buyerRating={80} />
     </>
   );
 }
