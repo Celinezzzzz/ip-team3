@@ -14,9 +14,9 @@
   width: 100%;
   padding: 1.75rem 0.75rem;
 
-  &__btn-wrapper {
+  &__wrapper {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     margin-bottom: 0.25rem;
   }
 
@@ -38,7 +38,7 @@
     flex-direction: column;
     justify-content: left;
     align-content: left;
-    margin-left: 1.5rem;
+    margin-left: 0.75rem;
   }
   &__info {
     display: flex;

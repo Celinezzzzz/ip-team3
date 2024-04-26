@@ -2,12 +2,17 @@ import React from "react";
 import "./Header.scss";
 import userImage from "../../assets/images/Mohan-muruge.jpg";
 import image2 from "../../assets/icons/icons8-verified.svg";
-
+import backIcon from "../../assets/icons/arrow_back-24px.svg";
 const Header = () => {
   return (
     <>
       <section className="site-header">
-        <div className="site-header__btn-wrapper">
+        <div className="site-header__wrapper">
+          <img
+            src={backIcon}
+            alt="Back to Main"
+            className="site-header__back"
+          />
           <button className="site-header__btn">FOLLOW</button>
         </div>
         <div className="site-header__user-info">
@@ -48,4 +53,3 @@ const Header = () => {
 };
 
 export default Header;
-
