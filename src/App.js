@@ -1,17 +1,17 @@
+import "./App.css";
 import React from 'react';
-//import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
 import Status from "./components/Status/Status";
-// import Header from './components/Header/Header'; // Uncomment if Header is used
 //import StatusPage from './pages/StatusPage/StatusPage';
-// import Footer from "./components/Footer/Footer"; // Uncomment if Footer is used
+//import Footer from "./components/Footer/Footer"; // Uncomment if Footer is used
 
 function App() {
   return (
-    <>
-      <Status sellerRating={30} buyerRating={80} />
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes></Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
